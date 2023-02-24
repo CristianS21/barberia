@@ -17,6 +17,10 @@
     padding: 30px 20px 75px;
 }
 
+.main {
+    scroll-behavior: smooth;
+}
+
 /*CONTENEDOR 1 */
 
 .contenedor-1 {
@@ -72,6 +76,7 @@
     font-size: 70px;
     color: #cf2d3a;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .c1-contenido h2 {
@@ -120,15 +125,38 @@
 }
 
 @media (max-width: 800px){
-    .c1-header .c1-nav .c1-lista {
-        display: none;
-    }
 
     .c1-header .c1-nav .menu{
         display: block;
-        width: 35px;
-        height: 35px;
+        width: 32px;
+        height: 32px;
         margin-right: 25px;
+    }
+    
+    .c1-header .c1-nav .menu:hover+.c1-lista{
+        top: 0;
+    }
+
+    .c1-header .c1-nav .c1-lista{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        position: fixed;
+        top: -250px;
+        left: 0;
+        background-color: rgba(0,0,0,.9);
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .c1-header .c1-nav .c1-lista:hover{
+        top: 0;
+    }
+
+    .c1-header .c1-nav .c1-lista a:hover {
+        color: #ffffff;
+        padding: 10px 60px;
     }
 
     .c1-contenido p {
@@ -285,7 +313,6 @@
 
 .c3-cont-tarjetas .tarjeta{
     width: 250px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,11 +368,11 @@
 @media (max-width: 719px){
     .c3-encabezado p{
     margin: 12px;
-    padding: 0;}
+    padding: 0;
+}
 
     .c3-cont-tarjetas .tarjeta{
         width: 100%;
-
     }
 
     }
@@ -426,7 +453,7 @@
 
 @media (max-width: 1000px){
     .c4-cont-contenido{
-        padding: 120px 70px 80px 70px;
+        padding: 94px 70px 80px 70px;
     }
 }
 
