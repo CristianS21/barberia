@@ -177,6 +177,7 @@
     padding: 150px 170px 100px 70px;
 }
 
+
 .contenedor-2 .c2-cont-contenido .c2-contenido h2{
     color: #ffffff;
     font-size: 45px;
@@ -215,7 +216,7 @@
     .contenedor-2 .c2-cont-contenido{
         width: 50%;
         background-color: #191919;
-        padding: 150px 30px 100px;
+        padding: 90px 30px 100px;
     }
 
 
@@ -237,17 +238,14 @@
             text-align: center;
             padding: 100px 75px
         }
-        
     }
-    
-
 }
 
 /*CONTENEDOR-3*/
 
 .contenedor-3 {
-    background-color: #1f1f1f;
-    padding: 70px 60px;
+    background-color: hsl(0, 0%, 12%);
+    padding: 50px 10px 30px;
 }
 
 .c3-encabezado {
@@ -287,15 +285,16 @@
 
 .c3-cont-tarjetas .tarjeta{
     width: 250px;
-    height: 350px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 14px;
     border-radius: 12px;
     background-color: #191919;
     margin: 15px;
+    box-shadow: 1px 1px gray;
 }
 
 .c3-cont-tarjetas .tarjeta img{
@@ -309,7 +308,7 @@
 }
 
 .c3-cont-tarjetas .tarjeta p{
-    margin: 35px 0 45px;
+    margin: 35px 0 25px;
     line-height: 22px;
     color: #afafaf;
     font-size: 14px;
@@ -318,6 +317,7 @@
 .c3-cont-tarjetas .tarjeta a{
     color: #cf2d3a;
     letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 .c3-btn {
@@ -329,7 +329,7 @@
     text-transform: uppercase;
     color: #ffffff;background-color: #cf2d3a;
     padding: 7px 32px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 @media (max-width: 800px){
     .c3-encabezado h2{
@@ -338,11 +338,18 @@
 }
 
 
-@media (max-width: 720px){
+@media (max-width: 719px){
     .c3-encabezado p{
     margin: 12px;
     padding: 0;}
-}
+
+    .c3-cont-tarjetas .tarjeta{
+        width: 100%;
+
+    }
+
+    }
+
 
 /*CONTENEDOR-4*/
 
@@ -445,7 +452,7 @@
 
 .contenedor-5{
     background-color: #1f1f1f;
-    padding: 70px 60px;
+    padding: 70px 0 90px;
 }
 
 .c5-encabezado {
@@ -485,8 +492,8 @@
 }
 
 .c5-tarjetas .c5-tarjeta{
-    width: 350px;
-    height: 450px;
+    width: 380px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -495,7 +502,7 @@
     border-radius: 12px;
     background-color: #191919;
     margin: 16px;
-    box-shadow: 1px 1px 15px rgb(186, 109, 109);
+    box-shadow: 1px 1px gray;
 }
 
 .c5-tarjetas .c5-tarjeta img{
@@ -522,6 +529,7 @@
 .c5-tarjetas .c5-tarjeta a{
     color: #cf2d3a;
     letter-spacing: 3px;
+    margin-bottom: 20px;
 }
 
 .c5-btn {
@@ -533,10 +541,16 @@
      text-transform: uppercase;
      color: #ffffff;background-color: #cf2d3a;
      padding: 7px 32px;
-     margin-top: 80px;
+     margin-top: 50px;
  }
 
- 
+
+ @media (max-width: 943px){
+    .c5-tarjetas .c5-tarjeta{
+        width: 86%;
+    }
+ }
+
 @media (max-width: 690px){
     .c5-encabezado p{
         width: 420px;
@@ -545,12 +559,8 @@
 @media (max-width: 538px){
     .c5-encabezado p{
         width: 365px;
-    }
-
 }
-
-
-
+}
  /*CONTENEDOR 6 */
 
  .contenedor-6{
@@ -588,6 +598,7 @@
     background: transparent;
     color: #ffffff;
     border-radius: 4px;
+    padding-left: 7px;
  }
 
  .contenedor-6 textarea{
@@ -596,8 +607,10 @@
     color: #ffffff;
     margin-top: 10px;
     border-radius: 4px;
-    width: 516px;
+    width: 510px;
     height: 220px;
+    padding: 7px;
+
  }
 
  .c6-btn {
