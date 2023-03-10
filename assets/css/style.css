@@ -9,7 +9,10 @@
     font-family: 'Kavoon', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
+}
+
+html {
+       scroll-behavior: smooth; 
 }
 
 .page {
@@ -234,12 +237,7 @@
     color: #cf2d3a;
 }
 
-.contenedor-2 .flecha {
-    width: 35px;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-}
+
 
 @media (max-width: 800px){ 
     .contenedor-2 .c2-cont-contenido .c2-contenido h2{
@@ -650,11 +648,12 @@
     justify-content: center;
  }
  
- .c6-btn a{
+ .c6-btn .btn{
      text-transform: uppercase;
      color: #ffffff;background-color: #cf2d3a;
      padding: 7px 32px;
      margin-top: 80px;
+     font-size: 16px;
  }
 
  .contenedor-6 .renglon_final {
